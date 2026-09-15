@@ -1,0 +1,11 @@
+.DS_Store
+__pycache__/
+*.pyc
+.env
+client-outreach/.env
+outputs/
+logs/
+processed/
+outreach-history.csv
+sent-drafts.csv
+bounced-emails.csv

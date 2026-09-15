@@ -1,0 +1,10 @@
+.env
+__pycache__/
+*.pyc
+processed/*.csv
+!processed/.gitkeep
+logs/*.log
+!logs/.gitkeep
+outreach-history.csv
+sent-drafts.csv
+bounced-emails.csv

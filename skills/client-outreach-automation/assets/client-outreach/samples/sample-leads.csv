@@ -1,0 +1,4 @@
+店家名稱,Email,聯絡人,地址,電話,來源網址,備註,狀態
+ABC 美學,hello@example.com,王小姐,台中市西區範例路 1 號,04-12345678,https://example.com,優先聯絡,未聯絡
+空白 Email 店,,李小姐,台中市北區範例路 2 號,04-22222222,https://example.com/blank,測試 Email 空白,未聯絡
+格式錯誤店,bad-email,陳先生,台中市南區範例路 3 號,04-33333333,https://example.com/bad,測試 Email 格式錯誤,未聯絡

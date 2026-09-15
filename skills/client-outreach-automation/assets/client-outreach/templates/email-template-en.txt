@@ -1,0 +1,16 @@
+Subject: Website Development Collaboration Proposal
+
+Hello {店家名稱},
+
+My name is {寄件人姓名}, and I provide {服務名稱} as {寄件人身分}.
+
+I reviewed your publicly available business information and wanted to ask whether you would be interested in building a brand website, custom website, or simple product / booking page to improve online visibility and brand trust.
+
+If you are interested in learning more, please feel free to reply to this email and I will share more details.
+
+Thank you for your time, and I wish your business continued success.
+
+{寄件人姓名}
+{寄件人身分}
+Email: {寄件人Email}
+LINE: {寄件人LINE}

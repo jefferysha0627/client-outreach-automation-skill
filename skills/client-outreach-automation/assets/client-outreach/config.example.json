@@ -1,0 +1,49 @@
+{
+  "mode": "draft",
+  "batch_size": 25,
+  "daily_limit": 100,
+  "require_review": true,
+  "output_folder": "../outputs",
+  "processed_folder": "./processed",
+  "template_file": "./templates/email-template.txt",
+  "template_files": {
+    "zh": "./templates/email-template.txt",
+    "en": "./templates/email-template-en.txt",
+    "ja": "./templates/email-template-ja.txt",
+    "ko": "./templates/email-template-ko.txt"
+  },
+  "history_file": "./outreach-history.csv",
+  "sent_history_file": "./sent-drafts.csv",
+  "bounced_email_file": "./bounced-emails.csv",
+  "log_file": "./logs/outreach.log",
+  "env_file": "./.env",
+  "processed_files_file": "./processed/processed-files.csv",
+  "scan_recursive": true,
+  "send_batch_size": 25,
+  "subject_template": "網站建置合作邀約",
+  "gmail_user_id": "me",
+  "sender": {
+    "name": "你的名字",
+    "title": "你的身分 / 公司名稱",
+    "email": "your-email@example.com",
+    "line": "your-line-id",
+    "service_name": "網站建置服務"
+  },
+  "school_names": {
+    "zh": "你的學校或機構名稱",
+    "zh_non_taiwan": "你的所在地 + 學校或機構名稱",
+    "en": "your school or organization",
+    "ja": "your school or organization",
+    "ko": "your school or organization"
+  },
+  "skip_status_values": [
+    "已建立草稿",
+    "已聯絡",
+    "已寄出",
+    "已回覆",
+    "暫不適合",
+    "已成交",
+    "已存在",
+    "疑似重複"
+  ]
+}

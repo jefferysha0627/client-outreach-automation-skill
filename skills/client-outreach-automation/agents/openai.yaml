@@ -1,0 +1,4 @@
+interface:
+  display_name: "Client Outreach Automation"
+  short_description: "Find leads and send Gmail outreach safely"
+  default_prompt: "Use $client-outreach-automation to find public leads, dedupe them, and run the Gmail outreach workflow safely."
