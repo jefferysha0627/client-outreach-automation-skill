@@ -1420,7 +1420,7 @@ def main() -> int:
             config,
             f"send-confirm-required source={source_file} rows={len(records)} sheets={','.join(sheet_names)} to_send={len(to_create)}",
         )
-        return 0
+        return 2
 
     if args.send and args.confirm_send and not args.confirm:
         for index in to_create:
@@ -1433,7 +1433,7 @@ def main() -> int:
             config,
             f"send-review-required source={source_file} rows={len(records)} sheets={','.join(sheet_names)} to_send={len(to_create)}",
         )
-        return 0
+        return 2
 
     if config.get("require_review", True) and not args.confirm:
         for index in to_create:

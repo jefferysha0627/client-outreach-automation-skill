@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import shutil
+import stat
 from pathlib import Path
 
 
@@ -18,6 +19,19 @@ def copytree(src: Path, dst: Path, force: bool) -> None:
     shutil.copytree(src, dst, ignore=shutil.ignore_patterns("__pycache__", "*.pyc"))
 
 
+def restore_executable_permissions(destination: Path) -> None:
+    for relative in (
+        "run-outreach.py",
+        "send-drafts.py",
+        "setup-gmail-oauth.py",
+        "send-drafts.command",
+    ):
+        path = destination / relative
+        if not path.is_file():
+            raise SystemExit(f"Missing executable after installation: {path}")
+        path.chmod(path.stat().st_mode | stat.S_IXUSR | stat.S_IXGRP | stat.S_IXOTH)
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Install the client-outreach tool into a project.")
     parser.add_argument("--target", default=".", help="Project directory to receive client-outreach/")
@@ -31,6 +45,7 @@ def main() -> int:
 
     destination = target / "client-outreach"
     copytree(ASSET_DIR, destination, args.force)
+    restore_executable_permissions(destination)
 
     config_example = destination / "config.example.json"
     config = destination / "config.json"
